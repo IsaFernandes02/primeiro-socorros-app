@@ -1,0 +1,13 @@
+name: CI Pipeline
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-python@v4
+      - name: Install dependencies
+        run: npm install
+      - name: Run Tests
+        run: npm test
