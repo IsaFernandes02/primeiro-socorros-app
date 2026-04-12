@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Primeiros Socorros Rápido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Guia de Primeiros Socorros</h1>
+            <p class="descricao">
+                Este guia foi desenvolvido para ajudar você a agir rapidamente em situações de emergência doméstica.
+                Selecione o tipo de acidente abaixo e siga as instruções passo a passo com calma.
+            </p>
+            <p class="aviso">
+                ⚠️ Este guia não substitui atendimento médico profissional.
+            </p>
+        </header>
+
+        <main>
+            <!-- Grid de botões principais -->
+            <div id="grid-principal" class="grid-botoes">
+                <button onclick="mostrarInstrucao('engasgo')" class="btn">Engasgo</button>
+                <button onclick="mostrarInstrucao('queimaduras')" class="btn">Queimaduras</button>
+                <button onclick="mostrarInstrucao('desmaio')" class="btn">Desmaio</button>
+            </div>
+
+            <!-- Seção de detalhes (escondida inicialmente) -->
+            <section id="area-instrucao" class="escondido">
+                <h2 id="titulo-emergencia"></h2>
+                <p id="descricao-emergencia" class="descricao-emergencia"></p>
+                
+                <div id="texto-passos" class="passos-container">
+                    <!-- JavaScript vai inserir os passos aqui -->
+                </div>
+
+                <p id="alerta" class="alerta"></p>
+                
+                <button onclick="voltar()" class="btn-voltar">⬅ Voltar ao Início</button>
+            </section>
+        </main>
+
+        <footer>
+            <p class="emergencia">
+                🚨 Em caso de emergência grave, ligue imediatamente <strong>192 (SAMU)</strong>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
