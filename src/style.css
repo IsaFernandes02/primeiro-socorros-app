@@ -1,0 +1,233 @@
+:root {
+    --cor-primaria: #d32f2f;
+    --cor-secundaria: #1976d2;
+    --cor-fundo: #f4f7f6;
+    --cor-texto: #333;
+    --cor-alerta: #ff9800;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container */
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/*  Header */
+
+header h1 {
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+}
+
+.descricao {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.aviso {
+    background: #fff3e0;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #e65100;
+    margin-bottom: 25px;
+    font-size: 0.85rem;
+}
+
+/* Botões */
+
+.grid-botoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 18px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+/* Acessibilidade */
+.btn:focus,
+.btn-voltar:focus {
+    outline: 3px solid var(--cor-secundaria);
+    outline-offset: 2px;
+}
+
+/*  Área de Instrução */
+
+.escondido {
+    display: none;
+}
+
+#area-instrucao {
+    text-align: left;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#titulo-emergencia {
+    color: var(--cor-primaria);
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.descricao-emergencia {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: white;
+}
+
+/*  Passos */
+
+.passos-container {
+    background: #f9f9f9;
+    padding: 18px;
+    border-left: 5px solid var(--cor-secundaria);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Caso use lista */
+
+.passos-container ol {
+    padding-left: 20px;
+}
+
+.passos-container li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/*  Alerta */
+
+.alerta {
+    background: #fff3e0;
+    color: #e65100;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/*  Botão Voltar */
+
+.btn-voltar {
+    width: 100%;
+    padding: 12px;
+    background: #666;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-voltar:hover {
+    background: #444;
+}
+
+/*  Rodapé*/
+
+footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.emergencia {
+    font-size: 1rem;
+    color: var(--cor-primaria);
+    font-weight: bold;
+    background: #ffebee;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* Responsividade*/
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .btn {
+        padding: 14px;
+        font-size: 1rem;
+    }
+}
+
+/* 🌙 Modo Escuro */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #eee;
+    }
+
+    .container {
+        background: #1e1e1e;
+    }
+
+    .descricao {
+        color: #bbb;
+    }
+
+    .passos-container {
+        background: #2a2a2a;
+    }
+
+    footer {
+        border-top: 1px solid #333;
+    }
+}
