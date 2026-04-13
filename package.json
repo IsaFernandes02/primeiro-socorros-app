@@ -1,6 +1,8 @@
 {
   "name": "primeiros-socorros-app",
   "version": "1.0.0",
+  "description": "Guia de Primeiros Socorros",
+  "main": "src/script.js",
   "scripts": {
     "test": "jest"
   },
