@@ -74,3 +74,33 @@ Estrutura pensada para facilitar o uso por diferentes perfis de usuários.
 - **Jest:** Testes automatizados.
 - **GitHub Actions:** Integração Contínua (CI).
 - **ESLint:** Análise estática de código (Linting).
+
+## 🚀 Como Executar o Projeto
+
+1. Instalação: Para baixar o projeto, o repositório deve ser clonado através do comando Git Clone utilizando o link oficial do GitHub.
+
+2. Execução: A aplicação é composta por arquivos estáticos. Para abrir a interface, basta navegar até a pasta "src" e abrir o arquivo "index.html, style.css e script.js" em qualquer navegador de internet.
+
+
+## 🧪 Qualidade e Automação
+
+Este projeto utiliza ferramentas modernas de automação que rodam via GitHub Actions (CI). Embora a aplicação seja HTML/JS puro, utilizamos o ambiente Node.js no servidor para validar a qualidade do código:
+
+- Testes (Jest): Verificam se as instruções de saúde estão carregando corretamente.
+- Linting (ESLint): Garante que o código segue boas práticas de escrita.
+
+📈 Versionamento e Autoria
+Versão Atual: 1.0.0 (Versionamento Semântico).
+Autor: Isadora Fernandes da Silva
+Link do Repositório: https://github.com/IsaFernandes02 /primeiros-socorros-app
+
+<div align="center">
+ 
+ ## 🚨 Aviso:
+ 
+ Este guia é uma ferramenta educacional e não substitui o atendimento médico profissional.
+ 
+</div>
+
+
+
