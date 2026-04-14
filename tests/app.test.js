@@ -17,16 +17,16 @@ describe('Testes da Lógica de Primeiros Socorros', () => {
         expect(instrucoesMock.engasgo.titulo).toBe("Engasgo (Manobra de Heimlich)");
     });
 
-    // Teste 2: Verificar se o detalhamento de queimaduras contém os 3 graus (Requisito Social)
+    // Teste 2: Verificar se o detalhamento de queimaduras contém os 3 graus
     test('Deve listar os 3 graus de queimaduras nas instruções', () => {
         const passos = instrucoesMock.queimaduras.passos.join(" ");
-        expect(passos).idêntico; // Verifica se contém os textos essenciais
+        // Verificamos se os textos obrigatórios estão presentes
         expect(passos).toContain("1º GRAU");
         expect(passos).toContain("2º GRAU");
         expect(passos).toContain("3º GRAU");
     });
 
-    // Teste 3: Verificar comportamento de erro (Caso a emergência não exista)
+    // Teste 3: Verificar comportamento de erro
     test('Não deve retornar dados para uma emergência inexistente', () => {
         const tipoInexistente = "ataque_de_tubarao";
         expect(instrucoesMock[tipoInexistente]).toBeUndefined();
