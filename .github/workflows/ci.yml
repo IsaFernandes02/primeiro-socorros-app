@@ -1,10 +1,6 @@
 name: CI Pipeline
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -19,8 +15,11 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Verificar se o package.json existe
+        run: ls -R  
+
       - name: Instalar dependências
         run: npm install
 
-      - name: Rodar Testes (Jest)
+      - name: Rodar Testes
         run: npm test
