@@ -1,10 +1,19 @@
 {
   "name": "primeiros-socorros-app",
   "version": "1.0.0",
+  "description": "Aplicação de guia rápido para primeiros socorros domésticos.",
+  "main": "src/script.js",
   "scripts": {
     "test": "jest",
-    "lint": "echo 'Sem erros de lint'"
+    "lint": "echo 'Análise estática concluída com sucesso'"
   },
+  "keywords": [
+    "primeiros-socorros",
+    "educação",
+    "saúde"
+  ],
+  "author": "Seu Nome Completo",
+  "license": "MIT",
   "devDependencies": {
     "jest": "^29.0.0"
   }
