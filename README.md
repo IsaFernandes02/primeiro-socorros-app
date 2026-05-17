@@ -90,9 +90,9 @@ Este projeto utiliza ferramentas modernas de automação que rodam via GitHub Ac
 - Linting (ESLint): Garante que o código segue boas práticas de escrita.
 
 📈 Versionamento e Autoria
-Versão Atual: 1.0.0 (Versionamento Semântico).
-Autor: Isadora Fernandes da Silva
-Link do Repositório: https://github.com/IsaFernandes02 /primeiros-socorros-app
+- Versão Atual: 1.0.0 (Versionamento Semântico).
+- Autor: Isadora Fernandes da Silva
+- Link do Repositório: https://github.com/IsaFernandes02 /primeiros-socorros-app
 
 <div align="center">
  
