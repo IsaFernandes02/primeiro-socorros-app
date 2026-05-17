@@ -94,8 +94,12 @@ Versão Atual: 1.0.0 (Versionamento Semântico).
 Autor: Isadora Fernandes da Silva
 Link do Repositório: https://github.com/IsaFernandes02 /primeiros-socorros-app
 
+## 🌐 Publicação Online
+
+https://isafernandes02.github.io/primeiro-socorros-app/
+
 <div align="center">
- 
+
  ## 🚨 Aviso:
  
  Este guia é uma ferramenta educacional e não substitui o atendimento médico profissional.
