@@ -4,7 +4,7 @@
 
 Orientações essenciais para agir com segurança em emergências domésticas
 
-🧠 Informação clara • ⚡ Resposta rápida • ❤️ Foco em salvar vidas**
+🧠 Informação clara • ⚡ Resposta rápida • ❤️ Foco em salvar vidas
 
 </div>
 
@@ -95,9 +95,6 @@ Autor: Isadora Fernandes da Silva
 Link do Repositório: https://github.com/IsaFernandes02 /primeiros-socorros-app
 
 <div align="center">
-
-## 🌐 Aplicação Online
-https://isafernandes02.github.io/primeiro-socorros-app/
  
  ## 🚨 Aviso:
  
