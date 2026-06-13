@@ -94,6 +94,10 @@ Este projeto utiliza ferramentas modernas de automação que rodam via GitHub Ac
 - Autor: Isadora Fernandes da Silva
 - Link do Repositório: https://github.com/IsaFernandes02 /primeiros-socorros-app
 
+## 🌐 Publicação Online
+
+https://isafernandes02.github.io/primeiro-socorros-app/
+
 <div align="center">
  
  ## 🚨 Aviso:
