@@ -2,108 +2,280 @@
 
 # 🚑 Guia de Primeiros Socorros Rápido
 
-Orientações essenciais para agir com segurança em emergências domésticas
+Orientações essenciais para agir com segurança em emergências domésticas.
 
 🧠 Informação clara • ⚡ Resposta rápida • ❤️ Foco em salvar vidas
+
+## 🌐 Aplicação Online
+
+https://isafernandes02.github.io/primeiro-socorros-app/
 
 </div>
 
 ---
 
-## 📋 Descrição do Problema Real
-Situações de emergência dentro de casa são mais comuns do que parecem — engasgos, desmaios, queimaduras e outros acidentes podem acontecer a qualquer momento. Nesses instantes críticos, o fator mais determinante não é apenas o conhecimento, mas a capacidade de agir rapidamente e com clareza.
+# 📋 Descrição do Problema Real
 
-No entanto, o pânico, a desinformação e a dificuldade em acessar instruções confiáveis fazem com que muitas pessoas tomem decisões inadequadas ou demorem a reagir. Isso pode agravar quadros que, com uma intervenção correta nos primeiros minutos, poderiam ser facilmente controlados.
+Situações de emergência dentro de casa são mais comuns do que parecem. Engasgos, desmaios, queimaduras e outros acidentes podem acontecer a qualquer momento.
 
-## 💡 Proposta da Solução
-O Guia de Primeiros Socorros Rápido é uma aplicação web desenvolvida com o objetivo de auxiliar usuários em situações emergenciais, oferecendo instruções simples, diretas e organizadas.
+Nesses instantes críticos, a capacidade de agir rapidamente é fundamental. Porém, o pânico, a falta de informação e a dificuldade em encontrar orientações confiáveis podem atrasar o atendimento inicial e agravar a situação.
 
-A plataforma foi projetada com foco total em usabilidade e agilidade, permitindo que qualquer pessoa — mesmo sem conhecimento técnico — consiga encontrar rapidamente o que fazer em momentos de urgência.
+Este projeto busca fornecer instruções rápidas e acessíveis para auxiliar pessoas em momentos de emergência até a chegada do atendimento profissional.
 
-A interface prioriza:
+---
+
+# 💡 Proposta da Solução
+
+O Guia de Primeiros Socorros Rápido é uma aplicação web desenvolvida para auxiliar usuários em situações emergenciais, oferecendo orientações claras, simples e organizadas.
+
+A aplicação foi projetada para que qualquer pessoa consiga encontrar rapidamente informações úteis em momentos de urgência, mesmo sem possuir conhecimento prévio em primeiros socorros.
+
+A plataforma prioriza:
 
 - Clareza das informações
 - Facilidade de navegação
-- Redução do tempo de resposta do usuário
+- Rapidez no acesso ao conteúdo
+- Interface intuitiva
+- Disponibilidade online
 
-## 🎯 Objetivos do Projeto
-Fornecer orientações confiáveis e imediatas para primeiros socorros
-Reduzir o impacto do pânico por meio de uma interface intuitiva
-Facilitar o acesso à informação em situações críticas
-Promover conscientização sobre procedimentos básicos de emergência
+---
 
-## 👥 Público-Alvo
+# 🎯 Objetivos do Projeto
 
-Este projeto foi pensado para atender pessoas que podem se deparar com emergências no dia a dia, como:
+- Fornecer orientações confiáveis sobre primeiros socorros.
+- Reduzir o impacto do pânico em situações críticas.
+- Facilitar o acesso à informação em emergências.
+- Promover conscientização sobre procedimentos básicos de atendimento.
+- Demonstrar a integração entre APIs públicas, banco de dados e deploy em nuvem.
+
+---
+
+# 👥 Público-Alvo
+
+Este projeto foi pensado para atender pessoas que podem se deparar com emergências no dia a dia:
 
 - 👨‍👩‍👧 Pais, responsáveis e cuidadores
 - 👴 Idosos e familiares
-- 🧑‍🤝‍🧑 Pessoas sem conhecimento prévio em primeiros socorros
-- 🏠 Qualquer indivíduo que deseje estar preparado para situações domésticas
+- 🧑‍🤝‍🧑 Pessoas sem treinamento em primeiros socorros
+- 🏠 Qualquer pessoa que deseje estar preparada para situações domésticas
 
-## ✨ Funcionalidades Principais
- ⚡ Guias de Ação Rápida
- 
-Instruções objetivas e passo a passo para situações como:
+---
+
+# ✨ Funcionalidades Principais
+
+### 🚑 Guias de Primeiros Socorros
+
+Instruções rápidas e objetivas para:
 
 - Engasgo
-- Desmaio
 - Queimaduras
+- Desmaio
 
-## 🧭 Interface Intuitiva
+### 📍 Consulta de Endereço por CEP
 
-Navegação simples com botões grandes e bem definidos, ideal para momentos de estresse.
+Integração com a API ViaCEP para localizar rapidamente um endereço durante uma emergência.
 
-- 📖 Conteúdo Direto e Acessível
-  
-Linguagem clara, evitando termos técnicos complexos.
+Exibe:
 
-- ♿ Acessibilidade
-  
-Estrutura pensada para facilitar o uso por diferentes perfis de usuários.
+- Rua
+- Bairro
+- Cidade
+- Estado
 
-## 🧩 Diferenciais
-- Foco em resposta imediata, não apenas informação teórica
-- Design centrado na experiência do usuário em situações críticas
-- Aplicação leve, rápida e acessível em diferentes dispositivos
-- Estrutura escalável para inclusão de novos tipos de emergência
+### 📋 Registro de Atendimentos
 
-## 🛠️ Tecnologias Utilizadas
-- **HTML5 / CSS3:** Estrutura e Estilização.
-- **JavaScript (Vanilla):** Lógica da aplicação.
-- **Jest:** Testes automatizados.
-- **GitHub Actions:** Integração Contínua (CI).
-- **ESLint:** Análise estática de código (Linting).
+Permite registrar:
 
-## 🚀 Como Executar o Projeto
+- Nome da pessoa atendida
+- Tipo de emergência
 
-1. Instalação: Para baixar o projeto, o repositório deve ser clonado através do comando Git Clone utilizando o link oficial do GitHub.
+Os registros ficam armazenados em banco de dados na nuvem.
 
-2. Execução: A aplicação é composta por arquivos estáticos. Para abrir a interface, basta navegar até a pasta "src" e abrir o arquivo "index.html, style.css e script.js" em qualquer navegador de internet.
+### ☁️ Banco de Dados em Nuvem
 
+Integração com Supabase para persistência dos dados.
 
-## 🧪 Qualidade e Automação
+Cada atendimento é armazenado com:
 
-Este projeto utiliza ferramentas modernas de automação que rodam via GitHub Actions (CI). Embora a aplicação seja HTML/JS puro, utilizamos o ambiente Node.js no servidor para validar a qualidade do código:
+- Nome
+- Emergência
+- Data e hora do registro
 
-- Testes (Jest): Verificam se as instruções de saúde estão carregando corretamente.
-- Linting (ESLint): Garante que o código segue boas práticas de escrita.
+### 📞 Ligação Rápida para Emergência
 
-📈 Versionamento e Autoria
-- Versão Atual: 1.0.0 (Versionamento Semântico).
-- Autor: Isadora Fernandes da Silva
-- Link do Repositório: https://github.com/IsaFernandes02 /primeiros-socorros-app
+Botão de acesso rápido ao SAMU:
 
-## 🌐 Publicação Online
+- 192
+
+---
+
+# 🧩 Diferenciais
+
+- Interface simples e intuitiva.
+- Foco em situações reais de emergência.
+- Consulta de endereço integrada.
+- Persistência dos registros em banco de dados.
+- Aplicação leve e responsiva.
+- Disponível online para acesso imediato.
+
+---
+
+# 🛠️ Tecnologias Utilizadas
+
+### Front-end
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+
+### APIs e Banco de Dados
+
+- ViaCEP API
+- Supabase
+
+### Testes e Qualidade
+
+- Jest
+- ESLint
+- GitHub Actions
+
+### Hospedagem
+
+- GitHub Pages
+
+---
+
+# 🚀 Como Executar o Projeto
+
+## 1. Clonar o Repositório
+
+```bash
+git clone https://github.com/IsaFernandes02/primeiro-socorros-app.git
+```
+
+## 2. Entrar na Pasta
+
+```bash
+cd primeiro-socorros-app
+```
+
+## 3. Instalar Dependências
+
+```bash
+npm install
+```
+
+## 4. Executar os Testes
+
+```bash
+npm test
+```
+
+## 5. Abrir a Aplicação
+
+Abra o arquivo:
+
+```text
+index.html
+```
+
+ou utilize a extensão Live Server do VS Code.
+
+---
+
+# 🧪 Qualidade e Automação
+
+O projeto utiliza integração contínua através do GitHub Actions.
+
+### Testes Automatizados
+
+Realizados com Jest para validar:
+
+- Funcionalidades da aplicação
+- Consumo da API ViaCEP
+
+### Linting
+
+Utilização do ESLint para garantir:
+
+- Padronização do código
+- Boas práticas de desenvolvimento
+
+---
+
+# ☁️ Banco de Dados
+
+A aplicação utiliza o Supabase como serviço de banco de dados em nuvem.
+
+Tabela principal:
+
+### atendimentos
+
+Campos:
+
+| Campo | Tipo |
+|---------|---------|
+| id | bigint |
+| nome | text |
+| emergencia | text |
+| data_ocorrencia | timestamp |
+
+---
+
+# 📈 Versionamento
+
+Este projeto segue o conceito de Versionamento Semântico (SemVer).
+
+Versão atual:
+
+```text
+1.0.0
+```
+
+---
+
+# 👩‍💻 Autoria
+
+### Desenvolvedora
+
+**Isadora Fernandes da Silva**
+
+---
+
+# 🔗 Links do Projeto
+
+### Repositório GitHub
+
+https://github.com/IsaFernandes02/primeiro-socorros-app
+
+### Aplicação Publicada
 
 https://isafernandes02.github.io/primeiro-socorros-app/
 
+---
+
+# 📚 Projeto Acadêmico
+
+Projeto desenvolvido para a disciplina de BootCamp II, contemplando:
+
+- Git e GitHub
+- GitHub Actions
+- APIs REST
+- Testes Automatizados
+- Deploy
+- Banco de Dados em Nuvem
+- Integração Contínua (CI/CD)
+
+---
+
 <div align="center">
- 
- ## 🚨 Aviso:
- 
- Este guia é uma ferramenta educacional e não substitui o atendimento médico profissional.
- 
+
+## 🚨 Aviso
+
+Este guia possui caráter educacional e não substitui o atendimento médico profissional.
+
+Em situações graves, ligue imediatamente para o SAMU (192).
+
 </div>
 
 

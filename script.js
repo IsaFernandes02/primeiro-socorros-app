@@ -1,3 +1,14 @@
+
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+
+const supabaseUrl = 'https://yfbgtpeybwnrhwhykprz.supabase.co';
+const supabaseKey = 'sb_publishable_rzOzK_97yaHEiqwxS-HnSg_9tX8fJTf';
+
+const supabase = createClient(
+    supabaseUrl,
+    supabaseKey
+);
+
 // Banco de dados local com as instruções
 const instrucoesEmergencia = {
     engasgo: {
@@ -163,3 +174,61 @@ async function buscarCEP() {
         console.error(erro);
     }
 }
+
+// ============================
+// REGISTRO DE OCORRÊNCIAS
+// ============================
+
+const formOcorrencia =
+    document.getElementById("formOcorrencia");
+
+if (formOcorrencia) {
+
+    formOcorrencia.addEventListener(
+        "submit",
+        async function (event) {
+
+            event.preventDefault();
+
+            const nome =
+                document.getElementById("nomePessoa").value;
+
+            const emergencia =
+                document.getElementById("tipoEmergencia").value;
+
+            const { error } = await supabase
+                .from("ocorrencias")
+                .insert([
+                    {
+                        nome: nome,
+                        emergencia: emergencia
+                    }
+                ]);
+
+            const mensagem =
+                document.getElementById("mensagemRegistro");
+
+            if (error) {
+
+                mensagem.innerHTML =
+                    "❌ Erro ao registrar ocorrência.";
+
+                console.error(error);
+
+                return;
+            }
+
+            mensagem.innerHTML =
+                "✅ Ocorrência registrada com sucesso!";
+
+            formOcorrencia.reset();
+
+        }
+    );
+
+}
+
+window.mostrarInstrucao = mostrarInstrucao;
+window.voltar = voltar;
+window.buscarCEP = buscarCEP;
+

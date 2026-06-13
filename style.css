@@ -342,3 +342,51 @@ footer {
     }
 }
 
+.ocorrencia-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f7f5f5;
+    border-radius: 12px;
+    border-left: 5px solid;
+    text-align: left;
+}
+
+.ocorrencia-container h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+}
+
+.ocorrencia-container label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.ocorrencia-container input,
+.ocorrencia-container select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.ocorrencia-container input:focus,
+.ocorrencia-container select:focus {
+    outline: none;
+    border-color: var(--cor-secundaria);
+}
+
+.ocorrencia-container .btn {
+    margin-top: 15px;
+    width: 100%;
+}
+
+#mensagemRegistro {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+

@@ -67,6 +67,42 @@
 
             </section>
 
+            <section class="ocorrencia-container">
+
+                <h2>Registro de Atendimento</h2>
+
+                <p class="cep-descricao">
+                    Registre o atendimento realizado para manter um histórico das emergências atendidas.
+                </p>
+
+                <form id="formOcorrencia">
+
+                    <label for="nomePessoa">Nome da pessoa</label>
+                    <input
+                        type="text"
+                        id="nomePessoa"
+                        placeholder="Digite o nome"
+                        required
+                    >
+
+                    <label for="tipoEmergencia">Emergência atendida</label>
+                    <select id="tipoEmergencia" required>
+                        <option value="">Selecione</option>
+                        <option value="Engasgo">Engasgo</option>
+                        <option value="Queimaduras">Queimaduras</option>
+                        <option value="Desmaio">Desmaio</option>
+                    </select>
+
+                    <button type="submit" class="btn">
+                        Salvar Atendimento
+                    </button>
+
+                </form>
+
+                <div id="mensagemRegistro"></div>
+
+            </section>
+
         </main>
 
         <footer>
@@ -80,6 +116,6 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
