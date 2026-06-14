@@ -211,7 +211,7 @@ if (formOcorrencia) {
             if (error) {
 
                 mensagem.innerHTML =
-                    "❌ Erro ao registrar ocorrência.";
+                    "❌ Erro ao registrar atendimento.";
 
                 console.error(error);
 
@@ -219,7 +219,7 @@ if (formOcorrencia) {
             }
 
             mensagem.innerHTML =
-                "✅ Ocorrência registrada com sucesso!";
+                "✅ Atendimento registrado com sucesso!";
 
             formOcorrencia.reset();
 
